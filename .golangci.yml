@@ -31,5 +31,7 @@ linters:
   - varnamelen        # We want to be able to use short variable names
   - ireturn           # We want to be able to return interfaces
   - canonicalheader   # The headers in http.Request are canonical by default
+  - promlinter
+  - containedctx
   - execinquery       # Disable because they are deprecated and throw warning in logs
   - gomnd             # Disable because they are deprecated and throw warning in logs
