@@ -35,3 +35,4 @@ linters:
   - containedctx
   - execinquery       # Disable because they are deprecated and throw warning in logs
   - gomnd             # Disable because they are deprecated and throw warning in logs
+  - exportloopref     # Disable because they are deprecated and throw warning in logs
