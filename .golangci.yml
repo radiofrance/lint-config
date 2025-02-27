@@ -33,4 +33,4 @@ linters:
   - canonicalheader   # The headers in http.Request are canonical by default
   - promlinter
   - containedctx
-  - exportloopref     # Disable because they are deprecated and throw warning in logs
+  - tenv              # Disable because it is deprecated and warnings are thrown in logs
