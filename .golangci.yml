@@ -31,6 +31,4 @@ linters:
   - varnamelen        # We want to be able to use short variable names
   - ireturn           # We want to be able to return interfaces
   - canonicalheader   # The headers in http.Request are canonical by default
-  - promlinter
-  - containedctx
   - tenv              # Disable because it is deprecated and warnings are thrown in logs
