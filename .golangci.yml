@@ -32,3 +32,12 @@ linters:
   - ireturn           # We want to be able to return interfaces
   - canonicalheader   # The headers in http.Request are canonical by default
   - tenv              # Disable because it is deprecated and warnings are thrown in logs
+
+linters-settings:
+  gosec:
+    config:
+      # Maximum allowed permissions mode for os.OpenFile and os.Chmod
+      G302: "0644"
+      # Maximum allowed permissions mode for os.WriteFile and ioutil.WriteFile
+      G306: "0644"
+
