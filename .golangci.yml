@@ -18,6 +18,7 @@ linters:
     - gochecknoinits    # Check that no init functions are present in Go code. => We want to use init functions
     - gocognit          # Calculates cognitive complexities of functions => legit, but we prefer to use sonarqube and be non-blocking
     - godox             # Search for TODO/BUG/FIXME => Prevent us from using any of these words
+    - gomodguard        # The linter 'gomodguard' is deprecated (since v2.12.0) due to: new major version. Replaced by gomodguard_v2.
     - err113            # check the errors handling expressions => Is a little extreme
     - mnd               # Magic number detector for Go. => We don't care
     - gomoddirectives   # A linter that handle replace, retract, exclude directives into go.mod => Prevent us fro, using replace in go.mod
