@@ -40,6 +40,8 @@ linters:
         G302: "0644"
         # Maximum allowed permissions mode for os.WriteFile and ioutil.WriteFile
         G306: "0644"
+    goconst:
+      ignore-tests: true
 formatters:
   enable:
     - gofmt
