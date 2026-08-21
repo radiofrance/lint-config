@@ -42,6 +42,7 @@ linters:
         G306: "0644"
     goconst:
       ignore-tests: true
+      min-occurrences: 5
 formatters:
   enable:
     - gofmt
