@@ -43,6 +43,10 @@ linters:
     goconst:
       ignore-tests: true
       min-occurrences: 5
+    exhaustruct_v5:
+      # When true, only types marked with //exhaustruct:enforce directive or matching enforce-rx patterns are checked.
+      # Default: false
+      explicit-mode: true
 formatters:
   enable:
     - gofmt
